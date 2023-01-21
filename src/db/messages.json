@@ -1,0 +1,35 @@
+[
+	{
+		"author": {
+			"id": "santi@gmail",
+			"nombre": "santiago",
+			"apellido": "cuadro",
+			"edad": "22",
+			"alias": "asdf",
+			"avatar": "fdsa"
+		},
+		"text": "holaa"
+	},
+	{
+		"author": {
+			"id": "santi@gmail",
+			"nombre": "santiago",
+			"apellido": "cuadro",
+			"edad": "22",
+			"alias": "asdf",
+			"avatar": "fdsa"
+		},
+		"text": "holaa 2"
+	},
+	{
+		"author": {
+			"id": "santi@gmail",
+			"nombre": "santiago",
+			"apellido": "cuadro",
+			"edad": "22",
+			"alias": "asdf",
+			"avatar": "fdsa"
+		},
+		"text": "holaa 3"
+	}
+]
