@@ -1,8 +1,8 @@
 import express from 'express';
 import passport from "passport";
-import { ProductDao } from '../../Dao/index.js';
-import Authenticated from '../../middlewares/authenticated.js';
-import {HTTP_STATUS} from '../../constants/api.constants.js';
+import { ProductDao } from './../../Dao/index.js';
+import Authenticated from './../../middlewares/authenticated.js';
+import {HTTP_STATUS} from './../../constants/api.constants.js';
 
 const router = express.Router();
 

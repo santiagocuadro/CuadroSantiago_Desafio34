@@ -1,7 +1,7 @@
 import express from "express";
-import { ProductDao } from "../../Dao/index.js";
-import { DATE_UTILS } from "../../utils/index.js";
-import {verifyRole} from "../../middlewares/verifyRole.js";
+import { ProductDao } from "./../../Dao/index.js";
+import { DATE_UTILS } from "./../../utils/index.js";
+import {verifyRole} from "./../../middlewares/verifyRole.js";
 
 const router = express.Router();
 

@@ -1,4 +1,4 @@
-import { createFakeUser } from "../utils/index.js";
+import { createFakeUser } from "./../utils/index.js";
 
 class MockService   {
   constructor(){

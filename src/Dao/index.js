@@ -1,5 +1,5 @@
-import { config } from "../config/index.js";
-import { MongoDBService } from "../services/index.js";
+import { config } from "./../config/index.js";
+import { MongoDBService } from "./../services/index.js";
 import { MessagesMongo, MessagesFilesystem, MessagesMemory } from "./Messages/index.js";
 import { ProductsMongo, ProductsFilesystem, ProductsMemory } from "./Products/index.js";
 

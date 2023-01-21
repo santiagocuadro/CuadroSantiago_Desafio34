@@ -6,9 +6,9 @@ import mongoose from "mongoose";
 import passport from 'passport';
 import cookieParser from "cookie-parser";
 import {Strategy as LocalStrategy} from 'passport-local';
-import * as strategy from './passport/strategy.js';
-import { User } from './models/index.js';
-import { routerProducts, routerMessage, routerTest, routerSession } from './Routes/index.js';
+import * as strategy from './src/passport/strategy.js';
+import { User } from './src/models/index.js';
+import { routerProducts, routerMessage, routerTest, routerSession } from './src/Routes/index.js';
 
 const PORT = 8080;
 const app = express();

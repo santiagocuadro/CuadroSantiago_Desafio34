@@ -1,5 +1,5 @@
 import express from "express";
-import { MessagesDao } from "../../Dao/index.js";
+import { MessagesDao } from "./../../Dao/index.js";
 import {schema, normalize} from 'normalizr';
 
 const router = express.Router();

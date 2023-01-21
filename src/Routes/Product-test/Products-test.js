@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { MockService } from '../../services/index.js';
-import { HTTP_STATUS } from '../../constants/api.constants.js'
+import { MockService } from './../../services/index.js';
+import { HTTP_STATUS } from './../../constants/api.constants.js'
 
 const router = Router();
 const service= new MockService()
