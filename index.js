@@ -2,15 +2,18 @@ import express from 'express';
 import {engine} from 'express-handlebars';
 import session from "express-session";
 import MongoStore from 'connect-mongo';
-import mongoose from "mongoose";
 import passport from 'passport';
 import cookieParser from "cookie-parser";
 import {Strategy as LocalStrategy} from 'passport-local';
 import * as strategy from './src/passport/strategy.js';
 import { User } from './src/models/index.js';
 import { routerProducts, routerMessage, routerTest, routerSession } from './src/Routes/index.js';
+import { config } from './src/config/index.js';
+import { MongoDBService } from "./src/services/index.js";
 
-const PORT = 8080;
+
+const PORT = config.SERVER.PORT;
+
 const app = express();
 
 app.use(cookieParser());
@@ -75,15 +78,7 @@ app.use('*', (req, res) => {
 });
 
 const server = app.listen(PORT, async () => {
-  console.log(`Running on port ${PORT}`)
-  try {
-    await mongoose.connect(MONGO_DB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("Connected DB");
-  } catch (error) {
-    console.log(`Error en conexión de Base de datos: ${error}`);
-  }
+  MongoDBService.init();
+  console.log(`Running on port ${PORT}`);
 });
 server.on('error', (err) => console.log(err));
